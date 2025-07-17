@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Education</title>
+  <!-- <link rel="stylesheet" href="education.css" /> -->
+   <link rel="stylesheet" href="./education.html">
+   <style>
+    body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0d0d0d;
+  color: white;
+}
+
+.education-section {
+  padding: 50px;
+  text-align: center;
+}
+
+.title {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.divider {
+  width: 200px;
+  height: 3px;
+  background-color: #fbc531;
+  margin: 0 auto 40px;
+  border: none;
+}
+
+.education-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.education-card {
+  background-color: #1c1c1c;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
+  text-align: left;
+}
+
+.education-card.full {
+  width: 100%;
+}
+
+.education-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.year {
+  color: #fbc531;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.degree {
+  font-size: 22px;
+  margin: 5px 0;
+}
+
+.institution {
+  font-size: 14px;
+  color: #aaa;
+  text-transform: uppercase;
+  margin: 5px 0;
+}
+
+.grade {
+  font-size: 14px;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+.download-btn-container {
+  margin-top: 40px;
+}
+
+.download-btn {
+  background-color: #fbc531;
+  color: black;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.download-btn:hover {
+  background-color: #e1a100;
+}
+
+   </style>
+</head>
+<body>
+  <section class="education-section">
+    <h2 class="title">Education</h2>
+    <hr class="divider" />
+
+    <div class="education-container">
+      <div class="education-card full">
+        <h3 class="year">2021–2025</h3>
+        <h2 class="degree">Bachelor of Technology</h2>
+        <p class="institution">Gayatri Vidya Parishad College of Engineering</p>
+        <p class="grade">CGPA: 9.00</p>
+      </div>
+
+      <div class="education-row">
+        <div class="education-card">
+          <h3 class="year">2019–2021</h3>
+          <h2 class="degree">Intermediate</h2>
+          <p class="institution">Jupiter Junior College</p>
+          <p class="grade">Percentage: 97.4%</p>
+        </div>
+
+        <div class="education-card">
+          <h3 class="year">2008–2019</h3>
+          <h2 class="degree">Secondary School Education</h2>
+          <p class="institution">St. Joseph’s High School</p>
+          <p class="grade">CGPA: 10.0</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="download-btn-container">
+      <a href="your-cv.pdf" class="download-btn" download>Download CV</a>
+    </div>
+  </section>
+</body>
+</html>

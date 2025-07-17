@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects</title>
+  <style>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0d0d0d;
+  color: #fff;
+}
+
+.projects-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 40px;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.project-card h3 {
+  font-size: 18px;
+  margin: 15px 0 10px;
+}
+
+.project-card p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+  </style>
+</head>
+<body>
+  <section class="projects-section">
+    <h1 class="title">Projects</h1>
+    <p class="subtitle">Below are the sample projects.</p>
+    <div class="projects-container">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.XOl2P090oEi3trnPCNJBzgHaEK?pid=Api&P=0&h=180" alt="Jnana (Quiz Portal)" />
+        <h3>Jnana (Quiz Portal)</h3>
+        <p>
+          Developed an interactive Quiz Portal using HTML, CSS, and JavaScript, featuring a responsive design and a countdown 
+timer for each question.
+        </p>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.Q1ppt7bO9lkTIz8Y9A3E-AHaDt?pid=Api&P=0&h=180" alt="Bluetooth Speed Control" />
+        <h3>Bluetooth Speed Control</h3>
+        <p>
+          Developed an IOT based project which  allows users to control the vehicle using Bluetooth on the device. 
+        </p>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.S4oYJ1cNNABX02gtAyuknQHaEK?pid=Api&P=0&h=180" alt="Sign Language Translator" />
+        <h3>Sign Language Translator</h3>
+        <p>
+         Built a sign language recognition system using deep learning models in Python to classify hand gestures from images or videos.
+        </p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

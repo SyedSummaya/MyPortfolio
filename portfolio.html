@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Syed Summaya</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+.hero-section {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* .left-panel {
+  width: 50%;
+  padding: 60px 40px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+ .logo {
+  align-self: flex-start;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 90px;
+  margin-top: 1px;
+}
+.left-panel {
+  width: 50%;
+  padding: 40px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.greeting {
+  color: #f4a825;
+  margin: 20px 0 5px;
+  font-weight: bold;
+}
+
+.left-panel h1 {
+  font-size: 40px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.left-panel h1 span {
+  color: #f4a825;
+}
+
+.title {
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin: 5px 0 30px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-yellow {
+  background-color: #f4a825;
+  color: #000;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.btn-dark {
+  background-color: #111;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.right-panel {
+  width: 50%;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-panel .nav-link {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #f4a825;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 2px solid #f4a825;
+}
+
+.right-panel img {
+  max-width: 80%;
+  height: auto;
+}
+
+/* .nav-link{
+           display: flex;
+           justify-content: space-around;
+           text-decoration: none; 
+           gap:40px;
+           margin-top: 40px;
+           
+} */
+/* .nav-bar {
+  position: absolute;
+  top: 20px;
+  left: 60px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #f4a825;
+  font-weight: bold;
+  border-bottom: 2px solid #f4a825;
+  padding-bottom: 2px;
+} */
+.nav-bar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 40px;
+  z-index: 10;
+}
+
+.nav-bar a {
+  color: #f4a825;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 4px;
+  transition: border-bottom 0.3s;
+}
+
+.nav-bar a:hover {
+  border-bottom: 2px solid #f4a825;
+}
+
+/* about */
+ body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0d0d0d;
+  color: white;
+}
+
+.container {
+  display: flex;
+  padding: 40px;
+  margin-left: 170px;
+  gap: 50px;
+}
+
+.left {
+  width: 30%;
+}
+
+.right {
+  width: 70%;
+}
+
+.avatar {
+  width: 200px;
+  border-radius: 15px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.info p {
+  margin: 5px 0;
+}
+
+h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.skill {
+  margin-bottom: 15px;
+}
+
+.bar {
+  background: #333;
+  height: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.bar div {
+  background: #fbc531;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.right h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.summary {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #aaa;
+}
+
+.details p {
+  margin: 10px 0;
+}
+
+.projects {
+  margin-top: 30px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.projects span {
+  color: #fbc531;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.github-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 25px;
+  background: #fbc531;
+  color: black;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+}
+/* Resume */
+    body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0d0d0d;
+  color: #ffffff;
+}
+
+.resume-section {
+  padding: 50px;
+  text-align: center;
+}
+
+.resume-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.resume-subtitle {
+  max-width: 900px;
+  margin: 10px auto 30px;
+  color: #b0b0b0;
+  font-size: 16px;
+}
+
+.experience-heading {
+  font-size: 36px;
+  margin-top: 30px;
+}
+
+.divider {
+  width: 150px;
+  height: 4px;
+  background-color: #fbc531;
+  border: none;
+  margin: 10px auto 30px;
+}
+
+.experience-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #1c1c1c;
+  padding: 30px;
+  border-radius: 10px;
+  width: 500px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.duration {
+  color: #fbc531;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.position {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.org {
+  color: #cccccc;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.desc {
+  color: #aaaaaa;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.card ul {
+  padding-left: 20px;
+  color: #dddddd;
+  font-size: 14px;
+}
+
+.card ul li {
+  margin-bottom: 10px;
+}
+/* education */
+    body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0d0d0d;
+  color: white;
+}
+
+.education-section {
+  padding: 50px;
+  text-align: center;
+}
+
+.title {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.divider {
+  width: 200px;
+  height: 3px;
+  background-color: #fbc531;
+  margin: 0 auto 40px;
+  border: none;
+}
+
+.education-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.education-card {
+  background-color: #1c1c1c;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
+  text-align: left;
+}
+
+.education-card.full {
+  width: 100%;
+}
+
+.education-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.year {
+  color: #fbc531;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.degree {
+  font-size: 22px;
+  margin: 5px 0;
+}
+
+.institution {
+  font-size: 14px;
+  color: #aaa;
+  text-transform: uppercase;
+  margin: 5px 0;
+}
+
+.grade {
+  font-size: 14px;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+.download-btn-container {
+  margin-top: 40px;
+}
+
+.download-btn {
+  background-color: #fbc531;
+  color: black;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.download-btn:hover {
+  background-color: #e1a100;
+}
+
+/* project */
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0d0d0d;
+  color: #fff;
+}
+
+.projects-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 40px;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.project-card h3 {
+  font-size: 18px;
+  margin: 15px 0 10px;
+}
+
+.project-card p {
+  font-size: 14px;
+  color: #ccc;
+}
+/* contact */
+    body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d0d0d;
+  color: #fff;
+}
+
+.contact-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.subtitle {
+  color: #ccc;
+  margin-bottom: 40px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.contact-box {
+  width: 220px;
+}
+
+.icon-circle {
+  background-color: #2e2e2e;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  color: #f4a825;
+}
+
+.contact-box h3 {
+  margin: 10px 0 5px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.contact-box p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.resume-link {
+  color: #f4a825;
+  text-decoration: none;
+}
+
+.resume-link:hover {
+  text-decoration: underline;
+}
+
+.contact-footer {
+  margin-top: 40px;
+}
+
+.contact-footer h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.btn-yellow {
+  background-color: #f4a825;
+  padding: 12px 24px;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  display: inline-block;
+  margin-bottom: 20px;
+  transition: background 0.3s;
+}
+
+.btn-yellow:hover {
+  background-color: #d99918;
+}
+
+.social-text {
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  color: #f4a825;
+  background-color: #1e1e1e;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 0 5px;
+  font-size: 16px;
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+}
+  </style>
+</head>
+<body>
+  <section class="hero-section">
+    <div class="left-panel">
+      <h3 class="logo">SYED.SUMMAYA</h3>
+      <p class="greeting">HELLO!</p>
+      <h1>I'm <span>SYED</span><br>SUMMAYA</h1>
+      <p class="title">ELECTRONICS AND COMMUNICATION</p>
+      <p class="subtitle">Student</p>
+      <div class="buttons">
+        <a href="https://www.linkedin.com/in/syedsummaya/" class="btn-yellow">LINKEDIN</a>
+        <a href="https://github.com/SyedSummaya" class="btn-dark">GITHUB</a>
+      </div>
+    </div>
+    <div class="right-panel">
+  
+<nav class="nav-bar">
+  <a href="./portfolio.html">Home</a>
+  <a href="./Aboutme.html">About</a>
+  <a href="./Resume.html">Resume</a>
+  <a href="./Project.html">Project</a>
+  <a href="./Contactme.html">Contact</a>
+</nav>
+  <img src="./WhatsApp Image 2025-07-14 at 23.37.14_2778ceb8.jpg" alt="hi" />
+</div>
+
+  </section>
+
+  <!-- about -->
+    <div class="container">
+    <div class="left">
+      <img src="./IMG-20230528-WA0034.jpg" alt="Profile Picture" class="avatar">
+      <div class="info">
+        <p><strong>Name:</strong> Syed Summaya</p>
+        <p><strong>Job Role:</strong> Electronics and Communication Engineer</p>
+        <p><strong>Address:</strong> Narasaraopet,Palnadu India</p>
+      </div>
+
+      <h3>Skills</h3>
+      <div class="skill">C 70% <div class="bar"><div style="width:70%"></div></div></div>
+      <div class="skill">Python 80% <div class="bar"><div style="width:80%"></div></div></div>
+      <div class="skill">SQL 80% <div class="bar"><div style="width:80%"></div></div></div>
+      <div class="skill">Web Development 80% <div class="bar"><div style="width:80%"></div></div></div>
+      <div class="skill">Service Now 50% <div class="bar"><div style="width:50%"></div></div></div>
+    </div>
+
+    <div class="right">
+      <h1>About Me</h1>
+      <p class="summary">
+        Motivated Electronics Student eager to work for an organization <br> which provides the opportunity
+        to improve my skills and knowledge <br> and to grow along with the organization objective.
+      </p>
+
+      <div class="details">
+        <p><strong>Profile:</strong> Electronics and Communication Engineer </p>
+        <p><strong>Education:</strong> Bachelor of Technology</p>
+        <p><strong>Language:</strong> English, Telugu, Hindi</p>
+        <p><strong>Tools:</strong> VS Code, GitHub, ServiceNow</p>
+        <p><strong>Soft Skills:</strong> Leadership, Networking, Communication & Problem Solving</p>
+        <p><strong>Interest:</strong> Traveling, Cooking</p>
+      </div>
+
+      <p class="projects"><span>3</span> Projects completed</p>
+      <a href="https://github.com/" class="github-button">GITHUB</a>
+    </div>
+  </div>
+  <!-- res -->
+   <section class="resume-section">
+    <h1 class="resume-title">Resume</h1>
+    <p class="resume-subtitle">
+      Python Full Stack Fresher skilled in developing end-to-end web applications using Python, Django, HTML, CSS, and JavaScript.Passionate about building scalable solutions with clean backend logic and responsive frontend design.
+
+
+    </p>
+
+    <h2 class="experience-heading">Experience</h2>
+    <hr class="divider"/>
+
+    <div class="experience-container">
+      <div class="card">
+        <h3 class="duration">April - June 2024</h3>
+        <h2 class="position">Digital Productivity, Financial Literacy and Employability Skills</h2>
+        <p class="org">NIIT FOUNDATION VIRTUAL INTERNSHIP </p>
+        <p class="desc">
+          • Completed training in digital productivity tools, including MS Office, email communication, and online collaboration platforms to 
+enhance workplace efficiency.
+        </p>
+        <ul>
+          <li>I gained foundational knowledge in financial literacy and employability skills, including budgeting, career planning, and professional 
+communication.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3 class="duration">January - March 2024</h3>
+        <h2 class="position">Embedded Systems Virtual Internship </h2>
+        <p class="org">Blackbucks (IIDT Foundation)</p>
+        <p class="desc">
+         Programmed microcontrollers and connected sensors for real-time applications
+        </p>
+        <ul>
+          <li>I learned basic debugging, circuit design, and embedded C programming</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- education -->
+    <section class="education-section">
+    <h2 class="title">Education</h2>
+    <hr class="divider" />
+
+    <div class="education-container">
+      <div class="education-card full">
+        <h3 class="year">2021–2025</h3>
+        <h2 class="degree">Bachelor of Technology</h2>
+        <p class="institution">Tirumala Engineering College </p>
+        <p class="grade">CGPA: 7.75</p>
+      </div>
+
+      <div class="education-row">
+        <div class="education-card">
+          <h3 class="year">2019–2021</h3>
+          <h2 class="degree">Intermediate</h2>
+          <p class="institution">Sri Chaitanya Junior College</p>
+          <p class="grade">Percentage: 83.9%</p>
+        </div>
+
+        <div class="education-card">
+          <h3 class="year">2008–2019</h3>
+          <h2 class="degree">Secondary School Education</h2>
+          <p class="institution">St. Joseph’s High School</p>
+          <p class="grade">CGPA: 9.8</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="download-btn-container">
+      <a href="SUMMAYA_RESUME.pdf" class="download-btn" download>Download CV</a>
+    </div>
+  </section>
+  <!-- project -->
+    <section class="projects-section">
+    <h1 class="title">Projects</h1>
+    <p class="subtitle">Below are the sample projects.</p>
+    <div class="projects-container">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.XOl2P090oEi3trnPCNJBzgHaEK?pid=Api&P=0&h=180" alt="Jnana (Quiz Portal)" />
+        <h3>Jnana (Quiz Portal)</h3>
+        <p>
+          Developed an interactive Quiz Portal using HTML, CSS, and JavaScript, featuring a responsive design and a countdown 
+timer for each question.
+        </p>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.Q1ppt7bO9lkTIz8Y9A3E-AHaDt?pid=Api&P=0&h=180" alt="Bluetooth Speed Control" />
+        <h3>Bluetooth Speed Control</h3>
+        <p>
+          Developed an IOT based project which  allows users to control the vehicle using Bluetooth on the device. 
+        </p>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.S4oYJ1cNNABX02gtAyuknQHaEK?pid=Api&P=0&h=180" alt="Sign Language Translator" />
+        <h3>Sign Language Translator</h3>
+        <p>
+         Built a sign language recognition system using deep learning models in Python to classify hand gestures from images or videos.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- contact -->
+   
+   <section class="contact-section">
+    <h1 class="title">Contact Me</h1>
+    <p class="subtitle">Below are the details to reach out to me!</p>
+    <div class="contact-container">
+      <div class="contact-box">
+        <div class="icon-circle"><i class="fas fa-map-signs"></i></div>
+        <h3>ADDRESS</h3>
+        <p>Narasaraopet, Palnadu,<br>India</p>
+      </div>
+      <div class="contact-box">
+        <div class="icon-circle"><i class="fas fa-phone"></i></div>
+        <h3>CONTACT NUMBER</h3>
+        <p>+91–9381844362</p>
+      </div>
+      <div class="contact-box">
+        <div class="icon-circle"><i class="fas fa-paper-plane"></i></div>
+        <h3>EMAIL ADDRESS</h3>
+        <p>syedsummaya36@gmail.com</p>
+      </div>
+      <div class="contact-box">
+        <div class="icon-circle"><i class="fas fa-globe"></i></div>
+        <h3>DOWNLOAD RESUME</h3>
+        <p><a href="#" class="resume-link">Here</a></p>
+      </div>
+    </div>
+
+    <div class="contact-footer">
+      <h2>Have a Question?</h2>
+      <a href="#" class="btn-yellow">CLICK HERE</a>
+      <p class="social-text">Find me on</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

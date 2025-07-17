@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Lokesh Duddukuri</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+.hero-section {
+  display: flex;
+  min-height: 100vh;
+}
+
+.left-panel {
+  width: 50%;
+  padding: 60px 40px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo {
+  
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.greeting {
+  color: #f4a825;
+  margin: 20px 0 5px;
+  font-weight: bold;
+}
+
+.left-panel h1 {
+  font-size: 40px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.left-panel h1 span {
+  color: #f4a825;
+}
+
+.title {
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin: 5px 0 30px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-yellow {
+  background-color: #f4a825;
+  color: #000;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.btn-dark {
+  background-color: #111;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.right-panel {
+  width: 50%;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-panel .nav-link {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #f4a825;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 2px solid #f4a825;
+}
+
+.right-panel img {
+  max-width: 80%;
+  height: auto;
+}
+
+/* .nav-link{
+           display: flex;
+           justify-content: space-around;
+           text-decoration: none; 
+           gap:40px;
+           margin-top: 40px;
+           
+} */
+/* .nav-bar {
+  position: absolute;
+  top: 20px;
+  left: 60px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #f4a825;
+  font-weight: bold;
+  border-bottom: 2px solid #f4a825;
+  padding-bottom: 2px;
+} */
+.nav-bar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 40px;
+  z-index: 10;
+}
+
+.nav-bar a {
+  color: #f4a825;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 4px;
+  transition: border-bottom 0.3s;
+}
+
+.nav-bar a:hover {
+  border-bottom: 2px solid #f4a825;
+}
+
+  </style>
+</head>
+<body>
+  <section class="hero-section">
+    <div class="left-panel">
+      <h3 class="logo">SYED.SUMMAYA</h3>
+      <p class="greeting">HELLO!</p>
+      <h1>I'm <span>SYED</span><br>SUMMAYA</h1>
+      <p class="title">ELECTRONICS AND COMMUNICATION</p>
+      <p class="subtitle">Student</p>
+      <div class="buttons">
+        <a href="#" class="btn-yellow">LINKEDIN</a>
+        <a href="#" class="btn-dark">GITHUB</a>
+      </div>
+    </div>
+    <div class="right-panel">
+  
+<nav class="nav-bar">
+  <a href="./portfolio.html">Home</a>
+  <a href="./Aboutme.html">About</a>
+  <a href="./Resume.html">Resume</a>
+  <a href="./Project.html">Project</a>
+  <a href="./Contactme.html">Contact</a>
+</nav>
+  <img src="./IMG-20230528-WA0034.jpg" alt="hi" />
+</div>
+
+  </section>
+</body>
+</html>
